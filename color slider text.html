@@ -1,0 +1,31 @@
+<!--wap in js to make a slider with color --->
+<html>
+<head>
+<script>
+var colors=["Red","navy","teal","brown","green"];
+var txt=["This is red color","This is navy color","this is teal color",
+"This is brown color","This is green color"];
+var i=0;
+function f1()
+{
+var d=document.getElementById("d1");
+d.innerText=txt[i];
+d.style.background=colors[i];
+i++;
+if(i==txt.length&&i==colors.length)
+{
+i=0;
+}
+window.setTimeout("f1()",1100);
+}
+</script>
+</head>
+<body onload="f1()">
+<h1>change Automatic background and text  or div</h1><hr>
+<div id="d1" style="background:blue;height:300px;width:800px;
+margin:1px auto;font-size:80px;text-align:center;color:white;
+font-weight:bold;line-height:3;text-shadow:2px 2px 2px black;">
+This is First Text
+</div>
+</body>
+</html>
