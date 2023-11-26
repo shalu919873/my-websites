@@ -1,0 +1,21 @@
+<!----3.wap in js to use unchange method change color in full screen--->
+<html>
+<head>
+<script>
+var c="#",i;
+var arr="0123456789ABCDEF";
+for(i=0;i<6;i++)
+{
+c=c+arr[Math.floor(Math.random()*10)]
+}
+alert(c);
+function f1()
+{
+document.getElementById("b1").style.background=c;
+}
+</script>
+</head>
+<body id="b1" onload="f1()">
+
+</body>
+</html>
